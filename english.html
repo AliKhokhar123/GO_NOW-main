@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO NOW</title>
+    <link rel="stylesheet" href="./assets/css/english_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .swiper-pagination {
+        position: absolute !important;
+        bottom: 0 !important;
+        text-align: center !important;
+    }
+
+    .swiper-pagination-bullet {
+        display: inline-block;
+        width: 30px;
+        height: 5px;
+        background-color: #a4a6ff;
+        border-radius: 20px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 70px;
+        height: 5px;
+        background-color: #5b60f6;
+    }
+
+    .animate__animated.animate__zoomInDown {
+        --animate-duration: 1.5s;
+    }
+</style>
+
+<body>
+
+    <div class="overlay-button-box" id="english_overlay_box">
+        <button class="download_app_button" id="download_button_three">Download the application</button>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="./assets/img/Go-Now-logo.png" alt="" style="width: 192px">
+        </div>
+        <div class="left d-flex align-items-center">
+            <div class="link">
+                <a href="./index.html">Arabic</a>
+            </div>
+            <div class="hamburger-icon-box d-flex align-items-center">
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-custom" id="sidebar">
+        <ul>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="#">Invest with us</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="#">Contact us</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" class="tick-icon"
+                    viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M26.98047,5.99023c-0.2598,0.00774 -0.50638,0.11632 -0.6875,0.30273l-15.29297,15.29297l-6.29297,-6.29297c-0.25082,-0.26124 -0.62327,-0.36647 -0.97371,-0.27511c-0.35044,0.09136 -0.62411,0.36503 -0.71547,0.71547c-0.09136,0.35044 0.01388,0.72289 0.27511,0.97371l7,7c0.39053,0.39037 1.02353,0.39037 1.41406,0l16,-16c0.29576,-0.28749 0.38469,-0.72707 0.22393,-1.10691c-0.16075,-0.37985 -0.53821,-0.62204 -0.9505,-0.60988z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <a href="#">Payment & credit</a>
+            </li>
+        </ul>
+        <div class="menu-last-link-box">
+            <a href="captain.html" class="menu-bar-link">Earn by driving <br> join us captain!</a>
+        </div>
+    </div>
+
+    <div class="main-top-section">
+
+        <div class="hero-section">
+            <img src="./assets/img/background-hero-img-1.jpeg" data-aos="zoom-in" data-aos-duration="1000" alt="">
+
+        </div>
+
+        <div class="heading">
+            <h1 class="animate__animated animate__zoomIn">Go Now app</h1>
+            <h1 class="animate__animated animate__zoomIn">We deliver to you wherever you are!</h1>
+        </div>
+
+        <div class="main-download-section">
+            <div class="download-section">
+                <a href="#" class="app-store animate__animated animate__bounceInLeft">
+                    <div class="icon"><ion-icon name="logo-apple" class="apple-icon"></ion-icon></div>
+                    <div class="text">
+                        <p class="first-text">Download on the</p>
+                        <p class="second-text">App Store</p>
+                    </div>
+                </a>
+                <a href="#" class="google-play animate__animated animate__bounceInRight">
+                    <div class="icon"><ion-icon name="logo-google-playstore" class="playstore-icon"></ion-icon></div>
+                    <div class="text">
+                        <p class="first-text">Download on</p>
+                        <p class="second-text">Google Play</p>
+                    </div>
+                </a>
+            </div>
+            <div class="download-button-box">
+                <button class="animate__animated animate__zoomIn download_app_button download_button_for_overlay"
+                    id="download_button_one">Download the application</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="phone-coins-section">
+        <div class="phone-img-box">
+            <img src="./assets/img/phone.png" data-aos="zoom-in" data-aos-duration="1000" class="phone-img" alt="">
+        </div>
+
+        <div class="wave-box">
+            <img src="./assets/img/background-waves.png" alt="">
+        </div>
+
+        <div class="increase-box">
+            <img src="./assets/img/increase.png" data-aos="fade-right" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="decrease-box">
+            <img src="./assets/img/decrease.png" data-aos="fade-right" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="coins-box">
+            <img src="./assets/img/coins.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+        </div>
+
+        <div class="element-1-box">
+            <img src="./assets/img/element-1.png" data-aos="fade-right" data-aos-duration="800" alt="">
+        </div>
+
+        <div class="element-2-box">
+            <img src="./assets/img/element-120.png" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"
+                alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/place-holder.webp" alt="Image 2">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="go-now-heading-box">
+        <h1 class="go-now-heading" data-aos="fade-right" data-aos-duration="1000">Why an application? Go <span
+                class="highlight">Now!</span> ?</h1>
+    </div>
+
+    <div class="main-paragarph-div">
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+            <img src="./assets/img/car-removebg-preview.png" class="car-icon" alt="">
+            <h1 class="box-heading">Unlimited trips</h1>
+            <h2 class="box-subheading">Enjoy the smart mobility experience now!</h2>
+            <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals, and you
+                can receive a monthly salary
+                And he appreciated it
+                3,000 riyals per month if you complete a specific number of trips set by the management and put the
+                company logo on your car to improve the brand
+                Our business and so on
+                One of our success partners!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <img src="./assets/img/shield-removebg-preview.png" class="box-icon" alt="">
+            <h1 class="box-heading">Super safe trips!</h1>
+            <h2 class="box-subheading">Enjoy the smart mobility experience now!</h2>
+            <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals, and you
+                can receive a monthly salary
+                And he appreciated it
+                3,000 riyals per month if you complete a specific number of trips set by the management and put the
+                company logo on your car to improve the brand
+                Our business and so on
+                One of our success partners!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <img src="./assets/img/coin-removebg-preview.png" class="coin-icon" alt="">
+            <h1 class="box-heading">Save your money!</h1>
+            <h2 class="box-subheading">Enjoy the smart mobility experience now!</h2>
+            <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals, and you
+                can receive a monthly salary
+                And he appreciated it
+                3,000 riyals per month if you complete a specific number of trips set by the management and put the
+                company logo on your car to improve the brand
+                Our business and so on
+                One of our success partners!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <h1 class="box-heading">Unlimited trips</h1>
+            <h2 class="box-subheading">Enjoy the smart mobility experience now!</h2>
+            <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals, and you
+                can receive a monthly salary
+                And he appreciated it
+                3,000 riyals per month if you complete a specific number of trips set by the management and put the
+                company logo on your car to improve the brand
+                Our business and so on
+                One of our success partners!</p>
+        </div>
+
+        <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="800">
+            <h1 class="box-heading">Unlimited trips</h1>
+            <h2 class="box-subheading">Enjoy the smart mobility experience now!</h2>
+            <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals, and you
+                can receive a monthly salary
+                And he appreciated it
+                3,000 riyals per month if you complete a specific number of trips set by the management and put the
+                company logo on your car to improve the brand
+                Our business and so on
+                One of our success partners!</p>
+        </div>
+    </div>
+
+
+
+    <div class="third-section">
+        <h1 class="third-section-heading pt-1" data-aos="fade-right" data-aos-duration="800">Enjoy economical trips with
+            all
+        </h1>
+        <h1 class="third-section-heading" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">Easy and
+            with the push of a button!</h1>
+        <h2 class="third-section-subheading" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+            Available for IOS and Android devices</h2>
+        <div class="third-section-button-box">
+            <button class="third-section-button" id="download_button_two" data-aos="fade-right" data-aos-duration="800"
+                data-aos-delay="900">Download the application now!</button>
+        </div>
+        <img src="./assets/img/mobile-in-hand.png" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500"
+            class="mobile-in-hand" alt="">
+    </div>
+
+    <!-- Second Swiper Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="car-slider-box">
+                    <div class="car-img">
+                        <img src="./assets/img/second-car-white-for-3-cars-section.png" alt="" class="slider-car-img-1">
+                        <div class="car-slider-text">Economy</div>
+                        <div class="car-slider-para">Affordable comfort on every ride!</div>
+                        <img src="./assets/img/current-icon.png" alt="" class="current-icon1">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="car-slider-box">
+                    <div class="car-img">
+                        <img src="./assets/img/slider-img/ladies-car.png" alt="" class="slider-car-img-2">
+                        <div class="car-slider-text">Ladies</div>
+                        <div class="car-slider-para">Safety and style for every woman.</div>
+                        <img src="./assets/img/current-icon.png" alt="" class="current-icon2">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="car-slider-box">
+                    <div class="car-img">
+                        <img src="./assets/img/slider-img/family-car.png" alt="" class="slider-car-img-3">
+                        <div class="car-slider-text">Family</div>
+                        <div class="car-slider-para">Space and comfort for your family!</div>
+                        <img src="./assets/img/current-icon.png" alt="" class="current-icon3">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="car-slider-box">
+                    <div class="car-img">
+                        <img src="./assets/img/slider-img/business-car.png" alt="" class="slider-car-img-4">
+                        <div class="car-slider-text">Business</div>
+                        <div class="car-slider-para">Enjoy the luxury experience😎🚀</div>
+                        <img src="./assets/img/current-icon.png" alt="" class="current-icon4">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="car-slider-box">
+                    <div class="car-img">
+                        <img src="./assets/img/slider-img/mini-car.png" alt="" class="slider-car-img-5">
+                        <div class="car-slider-text">Mini</div>
+                        <div class="car-slider-para">Compact, efficient, and fun to drive!</div>
+                        <img src="./assets/img/current-icon.png" alt="" class="current-icon5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="numbers-section">
+        <div class="number-section-logo">
+            <img src="./assets/img/Go-Now-logo.png" data-aos="fade-up" data-animation-fadeup="50px"
+                data-animation-duration="500" data-animation-delay="100" alt="">
+        </div>
+        <div class="number-section-para" data-aos="fade-up" data-animation-fadeup="50px" data-animation-duration="500"
+            data-animation-delay="300">
+            <p>In numbers</p>
+        </div>
+
+        <div class="counting-section d-flex justify-content-around mt-4">
+
+            <div class="cities text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="500">Countries</div>
+                <div class="counting-number" id="cities-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">1</span>
+                </div>
+            </div>
+
+            <div class="captain text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="500">Cities</div>
+                <div class="counting-number" id="captain-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">2</span>
+                    <span class="hidden">7</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="counting-section d-flex justify-content-around mt-4">
+
+            <div class="clients text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="700">Captains</div>
+                <div class="counting-number" id="clients-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">7</span>
+                    <span class="hidden">,</span>
+                    <span class="hidden">7</span>
+                    <span class="hidden">6</span>
+                    <span class="hidden">5</span>
+                </div>
+            </div>
+
+            <div class="cities text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="500">Customers</div>
+                <div class="counting-number" id="employees-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">4</span>
+                    <span class="hidden">0</span>
+                    <span class="hidden">0</span>
+                    <span class="hidden">K</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="counting-section d-flex justify-content-around mt-4">
+
+            <div class="captain text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="500">Trips</div>
+                <div class="counting-number" id="ridescomplete-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">1</span>
+                    <span class="hidden">,</span>
+                    <span class="hidden">2</span>
+                    <span class="hidden">6</span>
+                    <span class="hidden">M</span>
+                </div>
+            </div>
+
+            <div class="clients text-center">
+                <div class="counting-heading" data-aos="fade-up" data-animation-fadeup="50px"
+                    data-animation-duration="500" data-animation-delay="700">Fleet</div>
+                <div class="counting-number" id="fleetsize-number">
+                    <span class="hidden">+</span>
+                    <span class="hidden">2</span>
+                    <span class="hidden">7</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="fourth-section">
+        <!-- <div class="parallex-effect-img"></div> -->
+        <div class="img">
+            <img src="./assets/img/place-holder.webp" width="100%" alt="">
+        </div>
+        <div class="fourth-section-mobile">
+            <h1 class="fourh-section-heading" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">Make
+                money by driving ! <span><img src="./assets/img/rocket-money.svg" class="rockey-money-img"
+                        alt=""></span>
+            </h1>
+            <h2 class="fourh-section-subheading" data-aos="fade-right" data-aos-duration="700" data-aos-delay="600">Join
+                as captain Go <span class="color-blue">Now!</span> now!</h2>
+            <div class="fourth-section-button-box">
+                <button data-aos="zoom-in" data-aos-duration="700" data-aos-delay="900" id="home_captain_button">Join now!</button>
+            </div>
+
+
+            <div class="phone-coins-section" style="margin-top: 30px;">
+                <div class="phone-img-box">
+                    <img src="./assets/img/phone.png" data-aos="zoom-in" data-aos-duration="1000" class="phone-img"
+                        alt="">
+                </div>
+
+                <div class="wave-box">
+                    <img src="./assets/img/background-waves.png" alt="">
+                </div>
+
+                <div class="increase-box">
+                    <img src="./assets/img/increase-1.png" data-aos="fade-right" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="decrease-box">
+                    <img src="./assets/img/decrease-1.png" data-aos="fade-right" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="coins-box">
+                    <img src="./assets/img/coins.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+                </div>
+
+                <div class="element-1-box">
+                    <img src="./assets/img/element-1.png" data-aos="fade-right" data-aos-duration="800" alt="">
+                </div>
+
+                <div class="element-2-box">
+                    <img src="./assets/img/element-120.png" data-aos="fade-right" data-aos-duration="800"
+                        data-aos-delay="300" alt="">
+                </div>
+
+                <div class="blur-coin-box">
+                    <img src="./assets/img/blur-coin.png" data-aos="fade-right" data-aos-duration="1000" alt="">
+                </div>
+
+            </div>
+
+            <!-- Second Swiper Slider -->
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/place-holder.webp" alt="Image 3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+
+
+            <div class="main-paragarph-div">
+
+                <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <h1 class="box-heading">Grow your income</h1>
+                    <h2 class="box-subheading">Driving with us grows your income every day!</h2>
+                    <p class="box-para">Make profits by driving your car with a monthly income of up to 7,000 riyals,
+                        and you can get...
+                        A monthly salary of 3,000 riyals per month in the event of completing a number of trips
+                        specified by management and placing the company logo on
+                        Your car to improve our brand and thus be one of our success partners!</p>
+                </div>
+
+                <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <h1 class="box-heading">Earn more!</h1>
+                    <h2 class="box-subheading">Make more profits with incentives and guarantees!</h2>
+                    <p class="box-para">Complete a specific number of trips from the management to earn the incentives
+                        and guarantees listed in the incentive list
+                        Within the application, increase your daily income up to 500 riyals with ease, and you can
+                        collect it directly through the transfer service
+                        With a tikka linked to the stc application!</p>
+                </div>
+
+                <div class="paragraph" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <h1 class="box-heading">Achieve your goals!</h1>
+                    <h2 class="box-subheading">Your chance to achieve your financial freedom with us!</h2>
+                    <p class="box-para">You can get a monthly salary in addition to a meaningful daily income and
+                        collect it directly every day
+                        Ease and security through the electronic payment wallet. This is your opportunity to achieve
+                        your financial freedom with us. Download the application
+                        Join as a captain now!</p>
+                </div>
+
+            </div>
+
+            <div class="car-section">
+                <img src="./assets/img/background-glow.png" class="black-car-glow" alt="">
+                <div class="first-car-3-cars-section-box"><img src="./assets/img/first-car-white-for-3-cars-section.png"
+                        class="car-black" style="width: 156%;" alt=""></div>
+                <img src="./assets/img/background-glow.png" class="pink-car-glow" alt="">
+                <div class="second-car-3-cars-section-box"><img
+                        src="./assets/img/second-car-white-for-3-cars-section.png" class="car-pink" alt=""></div>
+                <img src="./assets/img/background-glow.png" class="white-car-glow" alt="">
+                <div class="third-car-3-cars-section-box"><img src="./assets/img/third-car-white-for-3-cars-section.png"
+                        class="car-white" alt=""></div>
+            </div>
+
+            <div class="location-phone-box">
+                <img src="./assets/img/phone-2.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+            </div>
+            <div class="tick-button-img-box">
+                <img src="./assets/img/button.png" data-aos="zoom-in" data-aos-duration="1000" alt="">
+            </div>
+
+            <div class="IMG" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="./assets/img/IMG.jpeg" alt="">
+            </div>
+
+            <div class="last-text-box" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Are you ready to earn</h1>
+                <h1>More money?!</h1>
+            </div>
+
+            <div class="last-button-box">
+                <button data-aos="fade-up" data-aos-duration="1000" id="home_captain_button_2">Join as captain!</button>
+            </div>
+
+            <div class="last-img-box">
+                <div class="inner-last-box" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/img/place-holder.webp" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="blur-effect">
+        <img src="./assets/img/mobile-in-hand.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+            fugit soluta doloo quisquam, quo nobis!</p>
+    </div>
+
+
+    <div class="company-section">
+        <h1 data-aos="fade-up" data-aos-duration="800">Success partners</h1>
+        <img src="./assets/img/company-img.png" data-aos="fade-up" data-aos-duration="800" alt="">
+    </div>
+
+
+    <!-- <footer style="display: none;">
+        <div class="footer-logo">
+            <img src="./assets/img/Go-Now-logo.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="footer-text">
+            <p data-aos="fade-up" data-aos-duration="800">تواصل معنا</p>
+        </div>
+        <div class="footer-box-one">
+
+            <a href="#" class="email" data-aos="fade-up" data-aos-duration="800">
+                <p>official@go-now.com</p>
+                <img src="./assets/img/email-icon.svg" alt="">
+            </a>
+
+            <a href="#" class="dialer" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <p>920013462</p>
+                <img src="./assets/img/dialer-icon.svg" alt="">
+            </a>
+
+            <a href="#" class="email" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <p>Live Chat</p>
+                <img src="./assets/img/chat.svg" alt="">
+            </a>
+        </div>
+    </footer> -->
+
+
+    <div class="fifth-section">
+        <h1 data-aos="fade-up" data-aos-duration="800">Contact us</h1>
+        <p data-aos="fade-up" data-aos-duration="800"><span class="color-blue"
+                style="margin-left: 5px; margin-right: 5px;">Flexible</span> communication <span class="color-blue"
+                style="margin-left: 5px; margin-right: 5px;">and multiple</span> options </p>
+        <!-- <p data-aos="fade-up" data-aos-duration="800">Flexible <span class="color-blue" style="margin-left: 5px; margin-right: 5px;"> and multiple </span> communication options</p> -->
+        <img data-aos="zoom-in" data-aos-duration="800" src="./assets/img/fifth-sec-img.jpeg" alt="">
+        <div class="fifth-section-contact-icons" data-aos="fade-up" data-aos-duration="800">
+            <div class="fifth-section-chat"><img src="./assets/img/chat-icon.png" alt=""></div>
+            <div class="fifth-section-email"><img src="./assets/img/email-icon-fifth-section.png" alt=""></div>
+            <div class="fifth-section-phone"><img src="./assets/img/phone-icon.png" alt=""></div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-duration="800">Payment methods</h1>
+        <p data-aos="fade-up" data-aos-duration="800"> <span><img src="./assets/img/security-tick.png"
+                    class="security-tick" alt=""></span> 100% secure payment</p>
+        <div class="fifth-section-logos">
+            <div class="first-line" data-aos="fade-up" data-aos-duration="800"><img
+                    src="./assets/img/first-line-logos.png" alt=""></div>
+            <div class="second-line" data-aos="fade-up" data-aos-duration="800"><img
+                    src="./assets/img/second-line-logos.png" alt=""></div>
+        </div>
+        <div class="horizontal-line-box">
+            <div class="horizontal-line" data-aos="fade-up" data-aos-duration="800"></div>
+        </div>
+        <div class="fifth-heading-contact" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
+            <p style="margin: 0;">contact@go-now-app.com</p>
+        </div>
+        <div class="fifth-heading-number" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
+            <p style="margin: 0;">920031462</p>
+        </div>
+        <div class="fifth-heading-final-text" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0">
+            <p>All rights reserved</p><span class="copyright-symbol">© </span>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./assets/js/script.js?ver=1.9"></script>
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const downloadButton = document.getElementById('download_button_one');
+    const overlayButtonBox = document.getElementById('english_overlay_box');
+    const downloadSection = document.querySelector('.main-top-section');
+
+    if (downloadButton && overlayButtonBox && downloadSection) {
+        const stickyNavbarHeight = 0;
+
+        // Function to detect Safari browser
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        console.log(isSafari)
+
+        const checkViewport = () => {
+            console.log("checking button");
+            const buttonRect = downloadButton.getBoundingClientRect();
+            const sectionRect = downloadSection.getBoundingClientRect();
+
+            let translateYValue = '100px'; // Default value
+
+            // If Safari, increase the translation value
+            if (isSafari) {
+                translateYValue = '150px'; // Adjust as needed for Safari
+            }
+
+            if (buttonRect.bottom < stickyNavbarHeight || buttonRect.top > window.innerHeight) {
+                // Button is out of view, show overlay if section is still in view
+                if (sectionRect.top < window.innerHeight && sectionRect.bottom > stickyNavbarHeight) {
+                    overlayButtonBox.style.transform = `translateY(0px)`;
+                } else {
+                    overlayButtonBox.style.transform = `translateY(${translateYValue})`;
+                }
+            } else {
+                // Button is in view, hide overlay
+                overlayButtonBox.style.transform = `translateY(${translateYValue})`;
+            }
+        };
+
+        // Initial check
+        checkViewport();
+
+        // Set interval to check every 100 milliseconds (adjust if needed)
+        const interval = setInterval(checkViewport, 100);
+
+        // Optionally, clear the interval if needed after certain actions
+        // clearInterval(interval); // Uncomment this if you want to stop the checks at some point
+    } else {
+        console.error("Required elements not found.");
+    }
+});
+
+</script>
