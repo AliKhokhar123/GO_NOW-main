@@ -1,0 +1,30 @@
+# values.yaml
+replicaCount: 1
+
+image:
+  repository: ghcr.io/alikhokhar123/go_now-main/go_now-web
+  tag: latest
+  pullPolicy: Always
+
+service:
+  name: go-now-web-app-auto-deploy
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  name: go-now-web-app-auto-deploy
+  className: "nginx"
+  clusterIssuer: "cert-manager-default-clusterissuer" 
+  path: /
+  hosts:
+    - host: www.go-now-app.com
+      paths:
+        - /
+  tls:
+    enabled: true
+    secretName: go-now-web-tls
+    hosts:
+      - www.go-now-app.com
+
+resources: {}
