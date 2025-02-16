@@ -360,7 +360,7 @@ nav {
 }
 
 .form-heading {
-    font-size: 32px;
+    font-size: 26px;
     margin: 0;
     background: transparent;
     font-family: 'montserrat-arabic';
@@ -373,7 +373,7 @@ nav {
 }
 
 label {
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
     background: transparent;
     font-family: 'montserrat-arabic';
@@ -381,7 +381,7 @@ label {
 }
 
 .sub-label {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 0;
     margin-top: 10px;
     background: transparent;
@@ -479,6 +479,7 @@ input:focus {
     margin-top: 15px;
     position: relative;
     transition: all ease-in-out 0.3s;
+    padding: 15px 0px;
 }
 
 .boxes::before {
@@ -631,4 +632,17 @@ input:focus {
 
 .percentage-box img {
     width: 13px;
+}
+
+.error-msg {
+    color: red !important;
+}
+
+.modalSuccessText {
+    margin: 0;
+    font-family: 'montserrat-arabic';
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
 }
