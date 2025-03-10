@@ -72,6 +72,16 @@ nav {
     font-weight: 700;
 }
 
+.mainLogo {
+    width: 165px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .mainLogo {
+      width: 140px;
+    }
+  }
+
 .link {
     margin-right: 21px;
 }
