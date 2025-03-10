@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_HOST} ^(api\.dev\.go-now-app\.com|socket\.dev\.go-now-app\.com)$ [NC]
+RewriteRule ^(.*)$ https://YOUR_HETZNER_IP/$1 [R=301,L]

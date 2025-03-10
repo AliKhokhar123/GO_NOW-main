@@ -71,22 +71,11 @@ nav {
     margin-right: 21px;
 }
 
-.mainLogo {
-    width: 165px;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .mainLogo {
-      width: 140px;
-    }
-  }
-
 .link a {
     font-size: 16px;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     color: #5b60f6;
-    font-family: 'montserrat-arabic';
 }
 
 .hamburger-icon {

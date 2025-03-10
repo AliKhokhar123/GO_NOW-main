@@ -71,16 +71,6 @@ nav {
     font-weight: 700;
 }
 
-.mainLogo {
-    width: 165px;
-}
-
-@media only screen and (max-width: 500px) {
-    .mainLogo {
-        width: 140px;
-    }
-}
-
 .link {
     margin-right: 21px;
 }
@@ -88,9 +78,8 @@ nav {
 .link a {
     font-size: 16px;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
     color: #5b60f6;
-    font-family: 'montserrat-arabic';
 }
 
 .hamburger-icon {
@@ -175,8 +164,7 @@ nav {
     margin: 10px 0px;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    overflow: hidden;
-    /* Ensures the animation stays within bounds */
+    overflow: hidden; /* Ensures the animation stays within bounds */
     transition: color 0.5s ease;
 }
 
@@ -185,19 +173,14 @@ nav {
     position: absolute;
     top: 0;
     opacity: 0;
-    left: 50%;
-    /* Start from the center horizontally */
-    transform: translateX(-50%);
-    /* Ensure centering */
-    width: 0;
-    /* Initially, no width */
+    left: 50%; /* Start from the center horizontally */
+    transform: translateX(-50%); /* Ensure centering */
+    width: 0; /* Initially, no width */
     height: 100%;
-    background-color: #4958fd;
-    /* Hover background color */
+    background-color: #4958fd; /* Hover background color */
     z-index: 0;
     /* transition: all 0.1s ease; Animate the width on hover */
-    border-radius: 40px;
-    /* Same radius as parent for smooth edges */
+    border-radius: 40px; /* Same radius as parent for smooth edges */
 }
 
 .sidebar-custom ul li a {
@@ -207,15 +190,13 @@ nav {
     font-weight: 600;
     font-family: 'montserrat-arabic';
     font-size: 16px;
-    z-index: 1;
-    /* Ensure text appears above the background */
+    z-index: 1; /* Ensure text appears above the background */
     /* transition: all 0.1s ease; */
 }
 
 .sidebar-custom ul li:hover::before {
     opacity: 1;
-    width: 200%;
-    /* Expand to cover from center to edges */
+    width: 200%; /* Expand to cover from center to edges */
 }
 
 .sidebar-custom ul li:hover a {
@@ -228,7 +209,7 @@ nav {
     top: 14px;
 }
 
-.menu-bar-link {
+.menu-bar-link{
     direction: rtl;
     font-weight: 800;
     font-family: 'montserrat-arabic';
